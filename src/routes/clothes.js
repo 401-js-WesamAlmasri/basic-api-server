@@ -2,16 +2,18 @@
 
 const experss = require('express');
 const router = experss.Router();
+const validator = require('../middleware/validator');
 
 const Cloth = require('../models/clothes');
 const cloth = new Cloth();
 
+router.use(validator);
 // routes
 router.get('/', getClothes);
 router.get('/:id', getSingleClothe);
 router.post('/', createClothe);
-router.put('/', updateClothe);
-router.delete('/', deleteClothe);
+router.put('/:id', updateClothe);
+router.delete('/:id', deleteClothe);
 
 // routes handlers
 

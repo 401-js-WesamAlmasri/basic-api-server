@@ -2,10 +2,12 @@
 
 const experss = require('express');
 const router = experss.Router();
+const validator = require('../middleware/validator');
 
 const Food = require('../models/food');
 const food = new Food();
 
+router.use(validator);
 // routes
 router.post('/', createFood);
 router.get('/', getFoods);
