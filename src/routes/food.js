@@ -7,12 +7,11 @@ const validator = require('../middleware/validator');
 const Food = require('../models/food');
 const food = new Food();
 
-router.use(validator);
 // routes
-router.post('/', createFood);
+router.post('/', validator,createFood);
 router.get('/', getFoods);
 router.get('/:id', getSingleFood);
-router.put('/:id', updateFood);
+router.put('/:id',validator, updateFood);
 router.delete('/:id', deleteFood);
 
 // routes handlers

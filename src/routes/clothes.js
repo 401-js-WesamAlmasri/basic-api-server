@@ -7,12 +7,11 @@ const validator = require('../middleware/validator');
 const Cloth = require('../models/clothes');
 const cloth = new Cloth();
 
-router.use(validator);
 // routes
 router.get('/', getClothes);
 router.get('/:id', getSingleClothe);
-router.post('/', createClothe);
-router.put('/:id', updateClothe);
+router.post('/', validator, createClothe);
+router.put('/:id', validator, updateClothe);
 router.delete('/:id', deleteClothe);
 
 // routes handlers
