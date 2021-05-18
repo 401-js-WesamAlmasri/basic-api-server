@@ -2,9 +2,9 @@
 
 A simple API server with tow routers and two models (Food and Clothes) with tests.
 
-[Submission Pull Request](https://github.com/401-js-WesamAlmasri/basic-api-server/pulls/1)
-[Tests](https://github.com/401-js-WesamAlmasri/basic-api-server/actions)
-[Deployed url](https://bsc-api-ser.herokuapp.com/)
+- [Submission Pull Request](https://github.com/401-js-WesamAlmasri/basic-api-server/pulls/1)
+- [Tests](https://github.com/401-js-WesamAlmasri/basic-api-server/actions)
+- [Deployed url](https://bsc-api-ser.herokuapp.com/)
 
 ## Setup
 
